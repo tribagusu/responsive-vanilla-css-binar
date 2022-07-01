@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Google Font - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- iconscout cdn -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- swiper js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- _navbar -->
+    <nav>
+      <div class="container nav__container">
+        <a href="#" class="nav__brand"><h4>Carousel</h4></a>
+        <div class="nav__navbar">
+          <ul class="nav__menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#" class="disabled-link">Disabled</a></li>
+          </ul>
+          <div class="nav__search">
+            <div class="nav__search__bar">
+              <input type="text" placeholder="Search" />
+            </div>
+            <div class="nav__search__btn"></div>
+          </div>
+        </div>
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+
+    <!-- _carousel -->
+    <header class="mySwiper">
+      <div class="carousel swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="carousel__slider1">
+            <div class="carousel__info1">
+              <h2>Example Headline</h2>
+              <h5>
+                Some representative placeholder content for the first slide of
+                the carousel.
+              </h5>
+              <a href="#" class="btn"><p>Sign up today</p> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="carousel__slider2">
+            <div class="carousel__info2">
+              <h2>Another example headline.</h2>
+              <h5>
+                Some representative placeholder content for the second slide of
+                the carousel.
+              </h5>
+              <a href="#" class="btn"><p>Learn more</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="carousel__slider3">
+            <div class="carousel__info3">
+              <h2>One more for good measure.</h2>
+              <h5>
+                Some representative placeholder content for the third slide of
+                this carousel.
+              </h5>
+              <a href="#" class="btn"><p>Browse gallery</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </header>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>

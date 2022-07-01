@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* _navbar */
+nav {
+  background: #212529;
+  width: 100vw;
+  height: 3.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.nav__container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.nav__brand h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.nav__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 1.5rem;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.nav__menu a {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.nav__container button {
+  display: none;
+}
+
+.disabled-link {
+  cursor: default;
+  pointer-events: none;
+  color: gray;
+}
+
+/* _carousel */
+header {
+  width: 100vw;
+  position: relative;
+  top: 3.5rem;
+  height: 500px;
+}
+
+.carousel__slider1 {
+  background: #777777;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__slider2 {
+  background: #777777;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__slider3 {
+  background: #777777;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__info1 {
+  width: 65%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel__info2 {
+  width: 65%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__info3 {
+  width: 65%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.carousel h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.carousel h5 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+}
+
+.carousel .btn {
+  padding: 0.6rem 0;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  background: white;
+  width: 150px;
+  background: #0d6efd;
+}
+
+.carousel .btn p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+}
+
+/* swiper pagination */
+.swiper-button-prev {
+  display: block;
+  color: white;
+}
